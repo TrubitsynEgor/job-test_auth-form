@@ -1,0 +1,28 @@
+.userInfo {
+	padding-top: 30px;
+	padding-left: 140px;
+
+	&Title {
+		max-width: 650px;
+	}
+
+	&Data {
+		display: flex;
+		flex-direction: column;
+		padding-bottom: 20px;
+
+		& span {
+			font-size: 24px;
+
+
+		}
+
+	}
+
+}
+
+
+
+.accent {
+	color: var(--accent);
+}

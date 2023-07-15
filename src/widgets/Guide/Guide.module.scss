@@ -1,0 +1,18 @@
+.title {
+	font-size: 26px;
+}
+
+.list {
+	display: flex;
+	gap: 102px;
+
+}
+
+.accent {
+	color: var(--accent);
+}
+
+.item {
+	max-width: 600px;
+	font-size: 20px;
+}
