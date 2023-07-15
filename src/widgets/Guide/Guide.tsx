@@ -1,10 +1,10 @@
+import { Link } from 'react-router-dom'
 import styles from './Guide.module.scss'
 
 export const Guide = () => {
   return (
     <>
       <h3 className={styles.title}>
-        {' '}
         Логика регистрации и логина находится в папке features
       </h3>
       <ul className={styles.list}>
@@ -31,7 +31,29 @@ export const Guide = () => {
           снова залогинится за него вы не сможете. Но имитация регистрации
           сделана полностью, и в случае если на backend по указанному ендпоинту
           будет код по добавлению в БД нового юзера, все будет работать как
-          надо.
+          надо. Или вы можете взгянуть как я реализовал jwt авторизацию на своем
+          фул-стак проекте/блоге: <br />
+          <Link to={'https://etv-blog-frontend.vercel.app/'} target="_blank">
+            https://etv-blog-frontend.vercel.app/
+          </Link>
+          Так вот там вы как раз и увидите в storage только JWT token, проект
+          полностью рабочий, вы можете регистрироваться, после отработает
+          ендпоинт и добавит всю необходимую информацию в БД, ну и разумеется
+          после можете совершенно свободно логинится за созданного пользователя.
+          Код проекта так же в открытом достопе на gitHub если будет интересно
+          <br />
+          <Link
+            to={'https://github.com/TrubitsynEgor/etv-blog-frontend'}
+            target="_blank"
+          >
+            https://github.com/TrubitsynEgor/etv-blog-frontend
+          </Link>
+          <Link
+            to={'https://github.com/TrubitsynEgor/blog-full-stack-backend'}
+            target="_blank"
+          >
+            https://github.com/TrubitsynEgor/blog-full-stack-backend
+          </Link>
         </li>
       </ul>
     </>
